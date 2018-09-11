@@ -1,4 +1,5 @@
 //给需要预览的img标签加上一个zoomImg的类即可
+
 $(function(){
     $(".zoomImg").on("click",function(){
         var newImgHtml = '<div class="mb" style="position: fixed;left: 0;top: 0;width: 100%;height: 100%;background: #000;opacity: 0.5;display: none;z-index: 999;"></div><div class="zoom" id="zoom" style="position: fixed;left: 50%;top: 50%;width: 700px;height:700px;margin-left: -350px;margin-top: -350px;display: none;z-index: 9999;"><div class="close" style="opacity: 1;filter: alpha(opacity=100);position: fixed;right: 50px;top: 50px;display: block;width: 48px;height: 48px;background: url(http://admin.aibiaozhu.top/Public/Admin/images/close.png) 0 0 no-repeat;background-size: 100% 100%;z-index: 1002;"></div></div>';
