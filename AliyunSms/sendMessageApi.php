@@ -10,9 +10,9 @@ class sendMessageApi {
      * */
     public function send_message_api($user_phone = null, $imgverify = null, $signName = null, $templateCode = null){
         //验证图形验证码
-        if(!check_verify($imgverify)){
-            return ['status'=>'fail','msg'=>'验证码输入错误！','data'=>''];
-        }
+//        if(!check_verify($imgverify)){
+//            return ['status'=>'fail','msg'=>'验证码输入错误！','data'=>''];
+//        }
         //短信接收号码
         $phoneNumber = $user_phone;
         //生成随机六位整数
